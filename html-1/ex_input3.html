@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <!-- input type="radio"에서 name은 모두 동일해야 함. -->
+        <b>시작 그룹</b><br />
+  
+        <!-- label for속성과 input의 id속성이 동일하면 요소가 연결됨. -->
+        <input id="newtab" type="radio" name="item" value="newtab" />
+        <label for="newtab">새 탭 페이지 열기</label><br />
+        <!--radio는 네임을 통일 시켜주면 하나만 선택되도록 만드는 것 -->
+         <!--class랑 type 으로 바꿔 쓸 수 있음 
+            별명 같은 거고 
+            id는 딱 이름 같은거 
+        -->   
+
+        <input id="stop" type="radio" name="item" value="stop" />
+        <label for="stop">중단한 위치에서 계속하기</label><br />
+        <input id="page" type="radio" name="item" value="page" />
+        <label for="page">특정 페이지 또는 페이지 모음 열기</label><br />
+        <br />
+        <b>개인정보 및 보안</b><br />
+        <input type="checkbox" name="sync" checked id="1" />
+        <!-- checked는 처음 실행시켰을때부터 체크 되어있도록 만드는 것-->
+
+    
+        <label for="1">동기화 및 서비스</label><br />
+        <input type="checkbox" name="login" id="2" />
+        <label for="2">로그인 허용</label><br />
+        <input type="checkbox" name="preload" checked id="3" />
+        <label for="3">페이지 미리 로드</label><br />
+        <input type="submit" value="업로드" />
+      </form>
+</body>
+</html>
