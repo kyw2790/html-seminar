@@ -1,0 +1,32 @@
+/*태그 선택자*/
+h1{
+    color: blue;
+}
+
+/*클래스 선택자*/
+.intro{
+    font-size: 24px;
+    color: green;
+}
+
+/*ID 선택자*/
+#first{
+    font-weight: bold;
+    color: red;
+}
+
+/*자손선택자 div 내부의  span에만 적용*/
+div > span{
+    background-color: yellow;
+}
+
+/*속성선택자 href 속성이 있는 요소에 적용*/
+a[href]{
+    text-decoration: none;
+    color: purple;
+}
+
+/*클래스 highlight 인 li태그를 선택하는 클래스 선택자*/
+li.highlight{
+    background-color: lightblue;
+}

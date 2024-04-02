@@ -1,0 +1,17 @@
+container{
+    background-color: lightgray; /*배경색을 추가하여 margin을 시각화*/
+    padding: 30px; /*컨테이너 주변에 공간 추가*/
+    border: 3px solid blue; /*border의 시각화를 위해 빨간색 테두리 추가 */
+}
+
+box{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 20px; /*box 주변에 margin을 추가*/
+    border: 3px solid red; /*border의 시각화를 위해 빨간색 테두리 추가*/
+    padding: 20px; /*padding  추가 */
+}
