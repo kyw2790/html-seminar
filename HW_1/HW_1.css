@@ -1,5 +1,9 @@
+.container {
+    float: left;
+    background-color: black;
+    text-align: left;
+    display: flex; /* 텍스트를 플렉스 박스로 설정합니다. */
+    color: white; /* 텍스트의 색상을 하얀색으로 설정합니다. */
+    flex-direction: column; /* 플렉스 박스 내부의 요소들을 수직으로 정렬합니다. */
 
-/*LIKE LION 글자색*/
-h1{
-    color: white;
 }
