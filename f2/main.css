@@ -1,0 +1,120 @@
+ /*최상위 색상변수  저장해놓으면 탭에 저장됨*/
+:root {  
+    --text-color: #f0f4f5;
+    --background-color: #263343;
+    --point-color: #ff7f50
+  }
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: 12px;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+
+  }
+  
+.navbar_menu {
+    display: flex;
+  }
+
+.navbar_menu li{
+    padding: 5px 10px;  /*상하 5픽셀 좌우 10픽셀 // 숫자 4개면 위에서부터 시계방향*/
+}  
+  
+.navbar_menu li:hover{ /*버튼에 손을 올렸을때 색을 바뀌게 만드는 것*/
+   background-color: var(--point-color);
+   border-radius: 5px;
+}  
+.navbar_links {
+    display: flex;
+  }
+
+
+
+
+ /*navbar svg 색상 넣기*/ 
+.navbar_logo svg{
+    fill: var(--point-color);
+    margin-right: 5px;
+}  
+
+.navbar_links svg {
+    fill: var(--text-color);
+    margin-left: 5px;
+    
+  }
+
+.navbar_bars{
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar_bars svg {
+  fill: var(--point-color);
+}
+
+
+@media screen and (max-width:600px) {
+ 
+  .navbar{
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+
+  }
+
+  .navbar_menu{
+    display: none;
+  }
+  
+  .navbar_menu.active{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    
+  }  
+  
+  .navbar_menu.active li{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+
+  }
+
+  .navbar_links.active {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  .navbar_links.active li:first-child svg{
+    margin-left: 0;
+  }
+
+  .navbar_links{
+    display: none;
+  }
+  
+
+  .navbar_bars{
+    display: block;
+    position: absolute;
+    right: 8px;
+  }  
+  
+
+} 

@@ -2,8 +2,221 @@
     float: left;
     background-color: black;
     text-align: left;
-    display: flex; /* 텍스트를 플렉스 박스로 설정합니다. */
-    color: white; /* 텍스트의 색상을 하얀색으로 설정합니다. */
-    flex-direction: column; /* 플렉스 박스 내부의 요소들을 수직으로 정렬합니다. */
+    display: flex; 
+    color: white;
+    flex-direction: column; 
 
 }
+
+.image-container{
+    position: relative;
+    top: -400px;
+    right: -20px;
+
+}
+.image-container img{
+    width: 270px;
+    height: 150px;
+
+}
+
+body {
+    background-color: black;
+    display: flex; /* flexbox 사용 */
+    justify-content: left; /* 가로 중앙 정렬 */
+    align-items: center ; /* 세로 중앙 정렬 */
+    height: 90vh; /* 전체 화면 높이로 설정 */
+    justify-content: left; /* 좌측 정렬을 위한 수평 가운데 정렬 */
+    margin: 50px; 
+    padding: 10px;
+}
+.container {
+    float: left;
+    background-color: black;
+    text-align: left;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+
+.container h1 {
+    font-style: italic; /* 텍스트 기울기 */
+    color: white; /* 텍스트 하얀색 */
+    font-size: 60px;
+    margin-top: -120px;
+    margin-bottom: 2px;
+    margin-left: -200px;
+
+}
+
+.container h4{
+    color: white; 
+    font-size: 20px;
+    font-weight:lighter; /*텍스트 얇게*/
+    margin-left: -200px;
+
+
+}
+
+.box {
+    width: 185px;
+    height: 200px;
+    background-color: white;
+    margin-left: -200px;
+    margin-top: 10px; /* 상자 간격 조정 */
+    border-radius: 10px;
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 텍스트 가운데 정렬 */
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+
+
+}
+
+
+/* 상자들을 가로로 정렬하기 위해 flexbox 사용 */
+.boxes {
+    display: flex;
+}
+
+/* 상자 사이 간격 설정 */
+.boxes .box + .box {
+    margin-left: 30px;
+}
+.box p{
+    color: black;
+     font-weight: bold; /* 텍스트 두껍게 */
+     font-size: 25px;
+     font-style: italic; /* 텍스트 기울기 */
+}
+
+
+.login {
+    
+    color: white;
+    font-size: 45px;
+    font-weight: bold; 
+    font-style: italic; /* 텍스트 기울기 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 50px;
+
+}
+
+
+
+.fold-login {
+    
+    color: white;
+    font-size: 45px;
+    font-weight: bold; 
+    font-style: italic; /* 텍스트 기울기 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 30px;
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+    align-items: center; /* 가운데 정렬 */
+
+
+}
+
+.fold-login-form {
+    display: none;
+    position: absolute; /* 절대 위치 지정 */
+    bottom: 70px; /* 오른쪽 정렬 */  /*이거하니깐 로그인요소 전체 오른쪽 정렬됨*/ 
+    left : 20;
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+    align-items: center; /* 가운데 정렬 */
+    margin-top: 10px; /* 폼과 로그인 사이 여백 조정 */
+}
+.fold-login-input {
+    margin-bottom: 20px; /* 입력 칸 간격 조정 */
+}
+
+.fold-login-input label {
+    color: white; /* 라벨 텍스트 색상 */
+    font-size: 20px; /* 라벨 텍스트 크기 */
+    margin-right: 10px; /* 라벨 오른쪽 여백 */
+    border-radius: 5px;
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+
+}
+
+
+.fold-login-input input {
+    padding: 5px; /* 입력 칸 내부 여백 */
+    font-size: 16px; /* 입력 칸 텍스트 크기 */
+}
+
+.fold-login-button {
+    background-color: #4CAF50; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    padding: 10px 20px; 
+    border-radius: 5px; /* 버튼 테두리 둥글게 */
+    cursor: pointer; /* 마우스 커서 모양 */
+    font-size: 20px; /* 버튼 텍스트 크기 */
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+    align-items: center; /* 가운데 정렬 */
+
+}
+
+.fold-login-button:hover {
+    background-color: #45a049; /* 마우스 들어왔을때 배경색 */
+}
+
+
+.login-form {
+    position: absolute; /* 절대 위치 지정 */
+    right: 0; /* 오른쪽 정렬 */  /*이거하니깐 로그인요소 전체 오른쪽 정렬됨*/ 
+    display: flex; /* Flexbox 사용 */
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+    align-items: center; /* 가운데 정렬 */
+    margin-top: 10px; /* 폼과 로그인 사이 여백 조정 */
+    display: flex; /* Flexbox 사용 */
+    padding: 500px;
+}
+
+.login-input {
+    margin-bottom: 20px; /* 입력 칸 간격 조정 */
+}
+
+.login-input label {
+    color: white; /* 라벨 텍스트 색상 */
+    font-size: 20px; /* 라벨 텍스트 크기 */
+    margin-right: 10px; /* 라벨 오른쪽 여백 */
+    border-radius: 5px;
+    flex-direction: column; /* 수직 방향으로 요소 배치 */
+
+}
+
+
+.login-input input {
+    padding: 5px; /* 입력 칸 내부 여백 */
+    font-size: 16px; /* 입력 칸 텍스트 크기 */
+}
+
+.login-button {
+    background-color: #4CAF50; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    padding: 10px 20px; 
+    border-radius: 5px; /* 버튼 테두리 둥글게 */
+    cursor: pointer; /* 마우스 커서 모양 */
+    font-size: 20px; /* 버튼 텍스트 크기 */
+}
+
+.login-button:hover {
+    background-color: #45a049; /* 마우스 들어왔을때 배경색 */
+}
+
+@media screen and (max-width:1500px) 
+{
+    .login-form/*가로축이 1000px이하면 login 요소 없어짐*/
+    {
+        display: none;
+    }
+
+    .fold-login-form{
+        display: block;
+    }
+
+}
+
